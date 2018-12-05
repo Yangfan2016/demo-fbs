@@ -9,7 +9,7 @@ module.exports = {
             } else {
                 app.use(proxy("/api",{ // 已有接口时
                     target: 'http://localhost:8090',
-                    changeOrigin: true,
+                    changeOrigin: true, // 针对于虚拟目录的网站
                 }));
             }
         },
